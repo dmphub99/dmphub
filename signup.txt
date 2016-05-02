@@ -1,0 +1,79 @@
+<div class="row forms">
+	<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+		<div class="signup-form">
+			<!--  Signup Form  -->
+					<h3 class="modal-title">Sign up for your App</h3>
+					<form class="form-horizontal" id="form2">
+						<fieldset>
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-md-3 control-label" for="Email">First Name</label>
+							  <div class="col-md-8">
+								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+								  <input name="First Name" type="text" placeholder="First Name" class="form-control">
+								</div>
+							  </div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label" for="Email">Last Name</label>
+							  <div class="col-md-8">
+								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+								  <input name="Last Name" type="text" placeholder="Last Name" class="form-control">
+								</div>
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label class="col-md-3 control-label" for="Email">Email</label>
+							  <div class="col-md-8">
+								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+								  <input id="Email" name="Email" type="text" placeholder="xxx@yyy.zzz" class="form-control input-md">
+								</div>
+								<p>Your email address serves as your username</p>
+							  </div>
+							</div>
+							
+							<!-- Password input-->
+							<div class="form-group">
+							  <label class="col-md-3 control-label" for="Password">Password</label>
+							  <div class="col-md-8">
+								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+								  <input id="password" name="password" type="password" placeholder="Enter Your Password" class="form-control input-md">
+								</div>
+								<p>Your Password must be 6 characters or more</p>
+							  </div>
+							</div>
+							
+							<div class="form-group">
+							  <label class="col-md-3 control-label" for="organization">Organization Name</label>
+							  <div class="col-md-8">
+								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-building fa-fw"></i></span>
+								  <input name="Organization" type="text" class="form-control input-md">
+								</div>
+							  </div>
+							</div>
+							
+							<div class="form-group">
+							  <label class="col-md-3 control-label" for="phone number">Phone Number</label>
+							  <div class="col-md-8">
+								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
+								  <input name="Phone" type="tel" class="form-control input-md">
+								</div>
+							  </div>
+							</div>
+								
+							<!-- Button -->
+							<div class="form-group" style="overflow:hidden;">
+							  <div class="col-md-12">
+								<button id="Submit" class="btn btn-primary center-block" type="Submit">SIGN UP</button>
+							  </div>
+							  
+							</div>
+						</fieldset>
+					</form>
+
+
+	
+	<!-- End Signup Form -->
+		</div>
+	</div>
+</div>
