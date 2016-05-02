@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app" class="load-full-screen">
+<html class="load-full-screen">
 <head>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="LimpidThemes">
 	
-	<title>DMPHUB</title>
+	<title>Cruise - Responsive Travel Agency Template</title>
 	
     <!-- STYLES -->
 	<link href="assets/css/animate.min.css" rel="stylesheet">
@@ -18,46 +18,40 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/flexslider.css" rel="stylesheet" media="screen">
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-	<link href="assets/css/custom-css.css" rel="stylesheet" media="screen" id="select-style2">
 	<!-- LIGHT -->
 	<link rel="stylesheet" type="text/css" href="assets/css/dummy.css" id="select-style">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
+	<link href="assets/css/light.css" rel="stylesheet" media="screen">
 	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600' rel='stylesheet' type='text/css'>
-	
-	
-	<!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" /-->
-    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
-	
-<!--script src="ngscript/singleEmail.js"></script-->
-	
 
 </head>
 <body class="load-full-screen">
+
 <!-- BEGIN: PRELOADER -->
 <div id="loader" class="load-full-screen">
 	<div class="loading-animation">
-		<span><i class="fa fa-envelope"></i></span>
-		<span><i class="fa fa-files-o"></i></span>
-		<span><i class="fa fa-line-chart"></i></span>
-		<span><i class="fa fa-plus"></i></span>
+		<span><i class="fa fa-plane"></i></span>
+		<span><i class="fa fa-bed"></i></span>
+		<span><i class="fa fa-ship"></i></span>
+		<span><i class="fa fa-suitcase"></i></span>
 	</div>
 </div>
 <!-- END: PRELOADER -->
 
 <!-- BEGIN: COLOR SWITCHER -->
 <div class="cswitcher">
-	<div id="color-switcher" class=" col-xs-hidden">
+	<div id="color-switcher">
 		<h6>CHOOSE COLOR</h6>
 		<ul>
 			<li class="green" data-path="assets/css/color/green.css"></li>
 			<li class="light-green" data-path="assets/css/color/light-green.css"></li>
-			<li class="red" data-path="assets/css/color/red.css"></li>
+			<li class="red" data-path="assets/css/dummy.css"></li>
 			<li class="blue" data-path="assets/css/color/blue.css"></li>  
 			<li class="brown" data-path="assets/css/color/brown.css"></li>
 			<li class="purple" data-path="assets/css/color/purple.css"></li>
-			<li class="light-blue" data-path="assets/css/color/light-blue.css"></li>
+			<li class="orange" data-path="assets/css/color/orange.css"></li>
 			<li class="yellow" data-path="assets/css/color/yellow.css"></li>
 		</ul>
 	</div>
@@ -67,11 +61,11 @@
 
 <!-- BEGIN: SITE-WRAPPER -->
 <div class="site-wrapper">
-	<!--div class="row transparent-menu-top">
+	<div class="row transparent-menu-top">
 		<div class="container clear-padding">
 			<div class="navbar-contact">
 				<div class="col-md-7 col-sm-6 clear-padding">
-					<a href="#" class="transition-effect"><i class="fa fa-phone"></i>1234567890</a>
+					<a href="#" class="transition-effect"><i class="fa fa-phone"></i> (+91) 1234567890</a>
 					<a href="#" class="transition-effect"><i class="fa fa-envelope-o"></i> support@email.com</a>
 				</div>
 				<div class="col-md-5 col-sm-6 clear-padding search-box">
@@ -83,15 +77,22 @@
 							</div>
 						</form>
 					</div>
-					
+					<div class="col-md-6 col-xs-7 clear-padding user-logged">
+						<a href="#" class="transition-effect">
+							<img src="assets/images/user.jpg" alt="cruise">
+							Hi, Lenore
+						</a>
+						<a href="#" class="transition-effect">
+							<i class="fa fa-sign-out"></i>Sign Out
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div-->
+	</div>
 	<div class="clearfix"></div>
-	<div class="row transparent-menu" id="transparent-menu-toggle" style="position:fixed; width:100%;">
-		<div class="container-fluid clear-padding">
-		<div class="col-md-9 col-sm-8 col-xs-12">
+	<div class="row transparent-menu">
+		<div class="container clear-padding">
 			<!-- BEGIN: HEADER -->
 			<div class="navbar-wrapper">
 				<div class="navbar navbar-default" role="navigation">
@@ -107,26 +108,25 @@
 							</button>
 							
 							<!-- BEGIN: LOGO -->
-							
-							<a class="navbar-brand logo" href="index.html">DMPHUB</a>
+							<a class="navbar-brand logo" href="index.html">CRUISE</a>
 						</div>
 						
 						<!-- BEGIN: NAVIGATION -->       
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="dropdown">
-									<a href="index.html"> HOME <!--i class="fa fa-caret-down"></i--></a>
-									<!--ul class="dropdown-menu">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-home"></i> HOME <i class="fa fa-caret-down"></i></a>
+									<ul class="dropdown-menu">
 										<li><a href="index.html"> HOME STYLE 1</a></li>
 										<li><a href="index-2.html"> HOME STYLE 2</a></li>
 										<li><a href="index-3.html"> HOME STYLE 3</a></li>
 										<li><a href="index-4.html"> HOME STYLE 4</a></li>
 										<li><a href="index-5.html"> HOME STYLE 5</a></li>
-									</ul-->
+									</ul>
 								</li>
 								<li class="dropdown mega">
-									<a href="#why-choose-us">ABOUT US<!--i class="fa fa-caret-down"></i--></a>
-									<!--ul class="dropdown-menu mega-menu">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-bed"></i> HOTELS <i class="fa fa-caret-down"></i></a>
+									<ul class="dropdown-menu mega-menu">
 										<li class="col-md-3 col-sm-3 desc">
 											<h4>HOTELS</h4>
 											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -191,12 +191,12 @@
 												</div>
 											</div>
 										</li>
-									</ul-->
+									</ul>
 									<div class="clearfix"></div>
 								</li>
 								<li class="dropdown mega">
-									<a href="#how-it-work"> PRODUCTS<!--i class="fa fa-caret-down"></i--></a>
-									<!--ul class="dropdown-menu mega-menu">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-plane"></i> FLIGHTS <i class="fa fa-caret-down"></i></a>
+									<ul class="dropdown-menu mega-menu">
 										<li class="col-md-3 col-sm-3 desc">
 											<h4>FLIGHTS</h4>
 											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -252,12 +252,12 @@
 												</div>
 											</div>
 										</li>
-									</ul-->
+									</ul>
 									<div class="clearfix"></div>
 								</li> 
 								<li class="dropdown mega">
-									<a href="#"> RESOURCES<!--i class="fa fa-caret-down"></i--></a>
-									<!--ul class="dropdown-menu mega-menu">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-suitcase"></i> TOURS <i class="fa fa-caret-down"></i></a>
+									<ul class="dropdown-menu mega-menu">
 										<li class="col-md-3 col-sm-3 desc">
 											<h4>TOURS</h4>
 											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -296,12 +296,12 @@
 												</div>
 											</div>
 										</li>
-									</ul-->
+									</ul>
 									<div class="clearfix"></div>
 								</li>
 								<li class="dropdown mega">
-									<a href="#home-top-destination">PRICING<!--i class="fa fa-caret-down"></i--></a>
-									<!--ul class="dropdown-menu mega-menu">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-taxi"></i> CARS <i class="fa fa-caret-down"></i></a>
+									<ul class="dropdown-menu mega-menu">
 										<li class="col-md-3 col-sm-3 desc">
 											<h4>CARS</h4>
 											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -336,12 +336,12 @@
 												</div>
 											</div>
 										</li>
-									</ul-->
+									</ul>
 									<div class="clearfix"></div>
 								</li>
 								<li class="dropdown mega">
-									<a href="contactus.html">CONTACT US<!--i class="fa fa-caret-down"></i--></a>
-									<!--ul class="dropdown-menu mega-menu">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-ship"></i> CRUISE <i class="fa fa-caret-down"></i></a>
+									<ul class="dropdown-menu mega-menu">
 										<li class="col-md-3 col-sm-3 desc">
 											<h4>CRUISES</h4>
 											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -351,7 +351,7 @@
 											<ul>
 												<li><a href="cruise.html">CRUISE SEARCH</a></li>
 												<li><a href="cruise-list.html">CRUISE LIST</a></li>
-												<li><a href="cruise-detail-2.html">CRUiSE DETAIL</a></li>
+												<li><a href="cruise-detail-2.html">CRUISE DETAIL</a></li>
 												<li><a href="cruise-detail.html">CRUISE DETAIL 2</a></li>
 											</ul>
 										</li>
@@ -375,10 +375,10 @@
 												</div>
 											</div>
 										</li>
-									</ul-->
+									</ul>
 									<div class="clearfix"></div>
 								</li>
-								<!--li class="dropdown mega">
+								<li class="dropdown mega">
 									<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-file"></i> PAGES <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu mega-menu">
 										<li class="col-md-3 col-sm-4 links">
@@ -426,56 +426,47 @@
 										</li>
 									</ul>
 									<div class="clearfix"></div>
-								</li-->
+								</li>
 							</ul>
 						</div>
 						<!-- END: NAVIGATION -->
 					</div>
 					<!--END: NAV-CONTAINER -->
 				</div>
-			</div></div>
-			
-			<div class="col-md-3 col-xs-12 col-sm-4 col-lg-3 clear-padding user-logged">
-						<a type="button" class="transition-effect signin" href="signup.html#signin"><i class="fa fa-sign-in"></i>&nbsp;SignIn</a>
-						<a type="button" class="transition-effect signup"href="signup.html#register">
-							<i class="fa fa-user"></i>&nbsp;SignUp
-						</a>
-					</div>
+			</div>
 			<!-- END: HEADER -->
 		</div>
 	</div>
 	<!-- BEGIN: SEARCH SECTION -->
-	<div class="row full-width-search" style="padding:145px 0px !important;">
-	<div class="offer-slider col-md-8" id="offer-slider-toggle" style="margin-top:0px; margin-left:90px; width:57.9%;">
-					<div class="item">
-						<h3>Verify and Clean Your Data in 3 Easy Steps</h3>
-					</div>
-			</div>
+	<div class="row full-width-search">
 		<div class="container clear-padding">
-			<div class="col-md-8 search-section tran-search-box">
-			
+			<div class="home-title col-md-12 text-center">
+				<h1>BOOK EXCLUSIVE HOLIDAYS</h1>
+				<h2>FOR YOUR LOVED ONES</h2>
+			</div>
+			<div class="col-md-12 search-section">
 				<div role="tabpanel">
 					<!-- BEGIN: CATEGORY TAB -->
 					<ul class="nav nav-tabs search-top" role="tablist" id="searchTab">
-						<li role="presentation" class="active text-center">
-							<a href="#email-address" aria-controls="flight" role="tab" data-toggle="tab">
-								<i class="fa fa-envelope"></i> 
-								<span>EMAIL</SPAN>
+						<li role="presentation" class="text-center">
+							<a href="#flight" aria-controls="flight" role="tab" data-toggle="tab">
+								<i class="fa fa-plane"></i> 
+								<span>FLIGHTS</SPAN>
+							</a>
+						</li>
+						<li role="presentation" class="active  text-center">
+							<a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">
+								<i class="fa fa-bed"></i> 
+								<span>HOTELS</span>
 							</a>
 						</li>
 						<li role="presentation" class="text-center">
-							<a href="#postal-address" aria-controls="hotel" role="tab" data-toggle="tab">
-								<i class="fa fa-location-arrow"></i> 
-								<span>POSTAL</span>
+							<a href="#holiday" aria-controls="holiday" role="tab" data-toggle="tab">
+								<i class="fa fa-suitcase"></i>
+								<span>HOLIDAYS</span>
 							</a>
 						</li>
 						<li role="presentation" class="text-center">
-							<a href="#phone-number" aria-controls="holiday" role="tab" data-toggle="tab">
-								<i class="fa fa-phone"></i>
-								<span>PHONE</span>
-							</a>
-						</li>
-						<!--li role="presentation" class="text-center">
 							<a href="#taxi" aria-controls="taxi" role="tab" data-toggle="tab">
 								<i class="fa fa-cab"></i>
 								<span>CAR</span>
@@ -486,49 +477,137 @@
 								<i class="fa fa-ship"></i>
 								<span>CRUISE</span>
 							</a>
-						</li-->
+						</li>
 					</ul>
 					<!-- END: CATEGORY TAB -->
 
 					<!-- BEGIN: TAB PANELS -->
 					<div class="tab-content">
 							<!-- BEGIN: FLIGHT SEARCH -->
-							<div role="tabpanel" class="tab-pane active" id="email-address">
-								<div ng-controller="emailController">
-									<div class="col-md-12 product-search-title">Email Verification</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+							<div role="tabpanel" class="tab-pane" id="flight">
+								<form >
+									<div class="col-md-12 product-search-title">Book Flight Tickets</div>
+									<div class="col-md-12 search-col-padding">
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="One Way"> One Way
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Round Trip"> Round Trip
+										</label>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Leaving From</label>
 										<div class="input-group">
-											<input type="email" ng-model="email" class="form-control" name="email" placeholder="rayestevez@gmail.com">
-											<span class="input-group-addon"><i class="fa fa-at fa-fw"></i></span>
+											<input type="text" name="departure_city" class="form-control" required placeholder="E.g. London">
+											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Leaving To</label>
+										<div class="input-group">
+											<input type="text" name="destination_city" class="form-control" required placeholder="E.g. New York">
+											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Departure</label>
+										<div class="input-group">
+											<input type="text" id="departure_date" name="departure_date" class="form-control" placeholder="DD/MM/YYYY">
+											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Return</label>
+										<div class="input-group">
+											<input type="text" id="return_date" class="form-control" name="return_date" placeholder="DD/MM/YYYY">
+											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
 										</div>
 									</div>
 									<div class="clearfix"></div>
-									<div class="col-md-12 search-col-padding">
-										<button type="submit" ng-click="call()" class="search-button btn transition-effect">Verify</button>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Adult</label><br>
+										<input id="adult_count" name="adult_count" value="1" class="form-control quantity-padding">
+									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Child</label><br>
+										<input type="text" id="child_count" name="child_count" value="1" class="form-control quantity-padding">
+									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Class</label><br>
+										<select class="selectpicker">
+											<option>Business</option>
+											<option>Economy</option>
+										</select>
 									</div>
 									<div class="clearfix"></div>
-									<ul style="display:none">
-  <li ng-repeat="x in names">
-    {{ x.email}}
-  </li>
-</ul>
-								</div>
+									<div class="col-md-12 search-col-padding">
+										<button type="submit" class="search-button btn transition-effect">Search Flights</button>
+									</div>
+									<div class="clearfix"></div>
+								</form>
 							</div>
 							<!-- END: FLIGHT SEARCH -->
 							
 							<!-- START: HOTEL SEARCH -->
-							<div role="tabpanel" class="tab-pane" id="postal-address">
+							<div role="tabpanel" class="tab-pane active" id="hotel">
 								<form >
-									<div class="col-md-12 product-search-title">Postal Address Verification</div>
-									<div class="col-md-12 search-col-padding">
+									<div class="col-md-12 product-search-title">Book Hotel Rooms</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>I Want To Go</label>
 										<div class="input-group">
-											<input type="text" name="postal-address" class="form-control" required placeholder="E.g. New York">
+											<input type="text" name="destination-city" class="form-control" required placeholder="E.g. New York">
 											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
 										</div>
 									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Check - In</label>
+										<div class="input-group">
+											<input type="text" name="check-in" id="check_in" class="form-control" placeholder="DD/MM/YYYY">
+											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Check - Out</label>
+										<div class="input-group">
+											<input type="text" name="check-out" id="check_out" class="form-control" placeholder="DD/MM/YYYY">
+											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Adult</label><br>
+										<input id="hotel_adult_count" name="adult_count" value="1" class="form-control quantity-padding">
+									</div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Child</label><br>
+										<input type="text" id="hotel_child_count" name="child_count" value="1" class="form-control quantity-padding">
+									</div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Rooms</label><br>
+										<select class="selectpicker" name="rooms">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+										</select>
+									</div>
+									<div class="col-md-3 col-sm-3 search-col-padding">
+										<label>Nights</label><br>
+										<select class="selectpicker" name="nights">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+										</select>
+									</div>
 									<div class="clearfix"></div>
 									<div class="col-md-12 search-col-padding">
-										<button type="submit" class="search-button btn transition-effect">Verify</button>
+										<button type="submit" class="search-button btn transition-effect">Search Hotels</button>
 									</div>
 									<div class="clearfix"></div>
 								</form>
@@ -536,17 +615,62 @@
 							<!-- END: HOTEL SEARCH -->
 								
 							<!-- START: BEGIN HOLIDAY -->
-							<div role="tabpanel" class="tab-pane" id="phone-number">
+							<div role="tabpanel" class="tab-pane" id="holiday">
 								<form >
-									<div class="col-md-12 product-search-title">Phone Verification</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-12 product-search-title">Book Holiday Packages</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>From</label>
 										<div class="input-group">
-											<input type="tel" name="phone-number" class="form-control" required placeholder="1234567890">
-											<span class="input-group-addon"><i class="fa fa-mobile fa-fw"></i></span>
+											<input type="text" name="pack-departure-city" class="form-control" required placeholder="E.g. New York">
+											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
 										</div>
 									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>I Want To Go</label>
+										<div class="input-group">
+											<input type="text" name="pack-destination-city" class="form-control" required placeholder="E.g. New York">
+											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Starting From</label>
+										<div class="input-group">
+											<input type="text" id="package_start" class="form-control" placeholder="DD/MM/YYYY">
+											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Duration(Optional)</label><br>
+										<select class="selectpicker" name="holiday_duration">
+											<option>3 Days</option>
+											<option>5 Days</option>
+											<option>1 Week</option>
+											<option>2 Weeks</option>
+											<option>1 Month</option>
+											<option>1+ Month</option>
+										</select>
+									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Package Type(Optional)</label><br>
+										<select class="selectpicker" name="package_type">
+											<option>Group</option>
+											<option>Family</option>
+											<option>Individual</option>
+											<option>Honeymoon</option>
+										</select>
+									</div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
+										<label>Budget(Optional)</label><br>
+										<select class="selectpicker" name="package_budget">
+											<option>500</option>
+											<option>1000</option>
+											<option>1000+</option>
+										</select>
+									</div>
+									<div class="clearfix"></div>
 									<div class="col-md-12 search-col-padding">
-										<button type="submit" class="search-button btn transition-effect">Verify</button>
+										<button type="submit" class="search-button btn transition-effect">Search Packages</button>
 									</div>
 									<div class="clearfix"></div>
 								</form>
@@ -554,40 +678,39 @@
 							<!-- END: HOLIDAYS -->
 							
 							<!-- START: CAR SEARCH -->
-							<!--div role="tabpanel" class="tab-pane" id="taxi">
+							<div role="tabpanel" class="tab-pane" id="taxi">
 								<form >
 									<div class="col-md-12 product-search-title">Search Perfect Car</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Pick Up Location</label>
 										<div class="input-group">
 											<input type="text" name="departure-city" class="form-control" required placeholder="E.g. New York">
 											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Drop Off Location</label>
 										<div class="input-group">
 											<input type="text" name="destination-city" class="form-control" required placeholder="E.g. New York">
 											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="clearfix"></div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Pick Up Date</label>
 										<div class="input-group">
 											<input type="text" id="car_start" class="form-control" placeholder="MM/DD/YYYY">
 											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="clearfix"></div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Pick Off Date</label>
 										<div class="input-group">
 											<input type="text" id="car_end" class="form-control" placeholder="MM/DD/YYYY">
 											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="clearfix"></div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Car Brnad(Optional)</label><br>
 										<select class="selectpicker" name="brand">
 											<option>BMW</option>
@@ -599,7 +722,7 @@
 											<option>Toyota</option>
 										</select>
 									</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Car Type(Optional)</label><br>
 										<select class="selectpicker" name="car_type">
 											<option>Limo</option>
@@ -616,32 +739,32 @@
 							<!-- END: CAR SEARCH -->
 							
 							<!-- START: CRUISE SEARCH -->
-							<!--div role="tabpanel" class="tab-pane" id="cruise">
+							<div role="tabpanel" class="tab-pane" id="cruise">
 								<form >
 									<div class="col-md-12 product-search-title">Cruise Holidays</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>From</label>
 										<div class="input-group">
 											<input type="text" name="pack-departure-city" class="form-control" required placeholder="E.g. New York">
 											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>I Want To Go</label>
 										<div class="input-group">
 											<input type="text" name="pack-destination-city" class="form-control" required placeholder="E.g. New York">
 											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="clearfix"></div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Starting From</label>
 										<div class="input-group">
 											<input type="text" id="cruise_start" class="form-control" placeholder="DD/MM/YYYY">
 											<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="clearfix"></div>
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Duration(Optional)</label><br>
 										<select class="selectpicker" name="holiday_duration">
 											<option>3 Days</option>
@@ -652,8 +775,7 @@
 											<option>1+ Month</option>
 										</select>
 									</div>
-									<div class="clearfix"></div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Package Type(Optional)</label><br>
 										<select class="selectpicker" name="package_type">
 											<option>Group</option>
@@ -662,7 +784,7 @@
 											<option>Honeymoon</option>
 										</select>
 									</div>
-									<div class="col-md-6 col-sm-6 search-col-padding">
+									<div class="col-md-4 col-sm-4 search-col-padding">
 										<label>Budget(Optional)</label><br>
 										<select class="selectpicker" name="package_budget">
 											<option>500</option>
@@ -683,7 +805,6 @@
 						<!-- END: TAB PANE -->
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	<!-- END: SEARCH SECTION -->
@@ -693,7 +814,8 @@
 		<div class="row work-row">
 			<div class="container">
 				<div class="section-title text-center">
-					<h2>WHAT WE DO?</h2>
+					<h2>HOW IT WORKS?</h2>
+					<h4>SEARCH - SELECT - BOOK</h4>
 					<div class="space"></div>
 					<p>
 						Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
@@ -701,49 +823,31 @@
 					</p>
 				</div>
 				<div class="work-step">
-					<div class="col-md-4 col-sm-4 text-center">
-						<i class="fa fa-envelope"></i>
-						<h5>Email Verification & Hygiene</h5>
+					<div class="col-md-4 col-sm-4 first-step text-center">
+						<i class="fa fa-search"></i>
+						<h5>SEARCH</h5>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
-					<div class="col-md-4 col-sm-4 text-center">
-						<i class="fa fa-home"></i>
-						<h5>Postal Address Verification & Hygiene</h5>
+					<div class="col-md-4 col-sm-4 second-step text-center">
+						<i class="fa fa-heart-o"></i>
+						<h5>SELECT</h5>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
-					<div class="col-md-4 col-sm-4 text-center">
-						<i class="fa fa-phone"></i>
-						<h5>Phone Verification</h5>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-				<div class="work-step">
-					<div class="col-md-4 col-sm-4 text-center">
-						<i class="fa fa-line-chart"></i>
-						<h5>List Quality Analysis</h5>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-					<div class="col-md-4 col-sm-4 text-center">
-						<i class="fa fa-files-o"></i>
-						<h5>Data De-Duplication</h5>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-					<div class="col-md-4 col-sm-4 text-center">
-						<i class="fa fa-plus"></i>
-						<h5>Data Enhancement</h5>
+					<div class="col-md-4 col-sm-4 third-step text-center">
+						<i class="fa fa-shopping-cart"></i>
+						<h5>BOOK</h5>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 </section>
 <!--END: HOW IT WORK -->
 
 <!-- START: PRODUCT SECTION-->
-<!--section class="hotel-product home-product">
+<section class="hotel-product home-product">
 	<!-- START: PRODUCT ROW 1 -->
-	<!--div class="row light-row">
+	<div class="row light-row">
 			<div class="col-md-6 clear-padding wow slideInLeft">
 				<div class="product-wrapper">
 					<div class="col-md-6 col-sm-6 home-product-padding tooltip-right">
@@ -844,104 +948,120 @@
 			</div>
 	</div>
 	<!-- END: PRODUCT ROW 1 -->
-<!--/section>
+</section>
 <!-- END: PRODUCT SECTION -->
 
-<!-- BEGIN: Pricing Section -->
-<section id="home-top-destination">
-	<div class="row image-background">
-		<div class="td-overlay">
-			<div class="container">
-				<div class="light-section-title text-center">
-					<h2>PRICING</h2>
-					<p>
-						Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-					</p>
+<!-- BEGIN: TOP DESTINATION -->
+<section id="top-tour-row">
+	<div class="row top-tour">
+		<div class="container">
+			<div class="section-title text-center">
+				<h2>TOP DESTINATION</h2>
+				<h4>CHECK OUT OUR TOP TOURS</h4>
+			</div>
+			<div class="col-md-4 col-sm-6 tour-grid clear-padding wow slideInUp" data-wow-delay="0.1s">
+				<img src="assets/images/tour1.jpg" alt="Cruise">
+				<div class="tour-brief">
+					<div class="pull-left">
+						<h4><i class="fa fa-map-marker"></i>FRANCE</h4>
+					</div>
+					<div class="pull-right">
+						<h4>$499</h4>
+					</div>
 				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12">
-				 <div id="pricing-table" class="clear  wow slideInUp">
-				 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="plan">
-        <h3>Free For Life<span>$0</span></h3>
-        <a class="signup" href="">Sign up</a>         
-        <ul>
-            <li>Verify upto 250 emails</li>
-            <li>Verify upto 250 postals</li>
-            <li>Verify upto 250 phones</li>
-		<li class="disabled">Suppresion</li>
-		<li class="disabled">N.C.O.A</li>
-		<li class="disabled">Deceased</li>
-		<li>List Analysis (limit 1)</li>
-		<li class="disabled">Data Enhance</li>
-		<li class="disabled">API Tools</li>
-		<li>1GB Storage</li>		
-        </ul> 
-    </div></div>
-	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="plan" id="most-popular">
-        <h3>Small Business<span>$99/mo</span></h3>
-        <a class="signup" href="">Sign up</a>        
-        <ul>
-            <li>Verify upto 5000 Emails</li>
-            <li>Verify upto 5000 Postals</li>
-            <li>Verify upto 5000 Phones</li>
-	    <li>Parse & Verify upto 5000 names</li>
-<li>Suppresion</li>
-<li>Quarterly N.C.O.A (5000)</li>
-<li>Quarterly Deceased</li>
-<li>List Analysis</li>
-<li>Data Enhance</li>
-<li>API Tools</li>
-<li>2GB Storage</li>	    
-        </ul>    
-    </div></div>
-	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="plan">
-        <h3>Mid Market Best Value<span>$249/mo</span></h3>
-		<a class="signup" href="">Sign up</a>
-        <ul>
-            <li>Verify upto 100,000 Emails</li>
-            <li>Verify upto 100,000 Postal</li>
-            <li>Verify upto 100,000 Phones</li>
-			<li>Parse & Verify 100,000 names</li>
-<li>Suppresion</li>
-<li>Quarterly N.C.O.A (50,000)</li>
-<li>Quarterly Deceased (50,000)</li>
-<li>List Analysis</li>
-<li>Data Enhance (50,000)</li>
-<li>API Tools</li>
-<li>10GB Storage</li>			
-        </ul>
-    </div></div>
-	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="plan">
-        <h3>Enterprise<span>$999/mo</span></h3>
-        <a class="signup" href="">Sign up</a>		
-        <ul>
-            <li>Verify upto 500,000 Emails</li>
-            <li>Verify upto 500,000 Postal</li>
-            <li>Verify upto 500,000 Phones</li>
-			<li>Parse & Verify 500,000 names</li>
-<li>Suppresion</li>
-<li>Quarterly N.C.O.A (250,000)</li>
-<li>Quarterly Deceased (250,000)</li>
-<li>List Analysis (Unlimited)</li>
-<li>Data Enhance (50,000)</li>
-<li>API Tools</li>
-<li>25GB Storage</li>			
-        </ul>
-    </div> 	</div>
-</div></div>
+				<div class="tour-detail text-center">
+					<p><strong><i class="fa fa-map-marker"></i>Itinerary: </strong>FRANCE, UK</p>
+					<p><strong><i class="fa fa-clock-o"></i>Duration: </strong> 4 Days</p>
+					<p><a href="#">DETAIL</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 tour-grid clear-padding wow slideInUp" data-wow-delay="0.2s">
+				<img src="assets/images/tour3.jpg" alt="Cruise">
+				<div class="tour-brief">
+					<div class="pull-left">
+						<h4><i class="fa fa-map-marker"></i>DUBAI</h4>
+					</div>
+					<div class="pull-right">
+						<h4>$999</h4>
+					</div>
+				</div>
+				<div class="tour-detail text-center">
+					<p><strong><i class="fa fa-map-marker"></i>Itinerary: </strong>UAE</p>
+					<p><strong><i class="fa fa-clock-o"></i>Duration: </strong> 4 Days</p>
+					<p><a href="#">DETAIL</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 tour-grid clear-padding wow slideInUp" data-wow-delay="0.3s">
+				<img src="assets/images/tour2.jpg" alt="Cruise">
+				<div class="tour-brief">
+					<div class="pull-left">
+						<h4><i class="fa fa-map-marker"></i>BANGKOK</h4>
+					</div>
+					<div class="pull-right">
+						<h4>$699</h4>
+					</div>
+				</div>
+				<div class="tour-detail text-center">
+					<p><strong><i class="fa fa-map-marker"></i>Itinerary: </strong>THIALAND</p>
+					<p><strong><i class="fa fa-clock-o"></i>Duration: </strong> 7 Days</p>
+					<p><a href="#">DETAIL</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 tour-grid clear-padding wow slideInUp" data-wow-delay="0.4s">
+				<img src="assets/images/tour7.jpg" alt="Cruise">
+				<div class="tour-brief">
+					<div class="pull-left">
+						<h4><i class="fa fa-map-marker"></i>AFRICA</h4>
+					</div>
+					<div class="pull-right">
+						<h4>$799</h4>
+					</div>
+				</div>
+				<div class="tour-detail text-center">
+					<p><strong><i class="fa fa-map-marker"></i>Itinerary: </strong>KENYA</p>
+					<p><strong><i class="fa fa-clock-o"></i>Duration: </strong> 4 Days</p>
+					<p><a href="#">DETAIL</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 tour-grid clear-padding wow slideInUp" data-wow-delay="0.5s">
+				<img src="assets/images/tour10.jpg" alt="Cruise">
+				<div class="tour-brief">
+					<div class="pull-left">
+						<h4><i class="fa fa-map-marker"></i>BELGIUM</h4>
+					</div>
+					<div class="pull-right">
+						<h4>$899</h4>
+					</div>
+				</div>
+				<div class="tour-detail text-center">
+					<p><strong><i class="fa fa-map-marker"></i>Itinerary: </strong>BELGIUM</p>
+					<p><strong><i class="fa fa-clock-o"></i>Duration: </strong> 4 Days</p>
+					<p><a href="#">DETAIL</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 tour-grid clear-padding wow slideInUp" data-wow-delay="0.6s">
+				<img src="assets/images/tour5.jpg" alt="Cruise">
+				<div class="tour-brief">
+					<div class="pull-left">
+						<h4><i class="fa fa-map-marker"></i>AUSTRIA</h4>
+					</div>
+					<div class="pull-right">
+						<h4>$499</h4>
+					</div>
+				</div>
+				<div class="tour-detail text-center">
+					<p><strong><i class="fa fa-map-marker"></i>Itinerary: </strong>AUSTRIA</p>
+					<p><strong><i class="fa fa-clock-o"></i>Duration: </strong> 4 Days</p>
+					<p><a href="#">DETAIL</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-<!-- END: TOP DESTINATION SECTION -->
+<!-- END: TOP DESTINATION -->
 
 <!-- BEGIN: RECENT BLOG POST -->
-<!--section id="recent-blog">
+<section id="recent-blog">
 	<div class="row top-offer">
 		<div class="container">
 			<div class="section-title text-center">
@@ -1078,7 +1198,7 @@
 			</div>
 		</div>
 	</div>
-</section-->
+</section>
 <!-- END: RECENT BLOG POST -->
 
 <!-- START: WHY CHOOSE US SECTION -->
@@ -1096,8 +1216,8 @@
 			</div>
 			<div class="col-md-4 col-sm-4 wow slideInLeft">
 				<div class="choose-us-item text-center">
-					<div class="choose-icon"><i class="fa fa-filter"></i></div>
-					<h4>Unique Features</h4>
+					<div class="choose-icon"><i class="fa fa-suitcase"></i></div>
+					<h4>Handpicked Tour</h4>
 					<p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					<a href="#">KNOW MORE</a>
 				</div>
@@ -1124,7 +1244,7 @@
 <!-- END: WHY CHOOSE US SECTION -->
 
 <!-- START: HOT  DEALS -->
-<!--section>
+<section>
 	<div class="row hot-deals">
 		<div class="container clear-padding">
 			<div class="section-title text-center">
@@ -1133,7 +1253,7 @@
 			</div>
 			<div role="tabpanel" class="text-center">
 				<!-- BEGIN: CATEGORY TAB -->
-				<!--ul class="nav nav-tabs" role="tablist" id="hotDeal">
+				<ul class="nav nav-tabs" role="tablist" id="hotDeal">
 					<li role="presentation" class="active text-center">
 						<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">
 							<i class="fa fa-bed"></i> 
@@ -1166,11 +1286,11 @@
 					</li>
 				</ul>
 				<!-- END: CATEGORY TAB -->
-				<!--div class="clearfix"></div>
+				<div class="clearfix"></div>
 				<!-- BEGIN: TAB PANELS -->
-				<!--div class="tab-content">
+				<div class="tab-content">
 					<!-- BEGIN: FLIGHT SEARCH -->
-					<!--div role="tabpanel" class="tab-pane active fade in" id="tab1">
+					<div role="tabpanel" class="tab-pane active fade in" id="tab1">
 						<div class="col-md-6 hot-deal-list wow slideInLeft">
 							<div class="item">
 								<div class="col-xs-3">
@@ -1347,7 +1467,7 @@
 			</div>
 		</div>
 	</div>
-</section-->
+</section>
 <!-- END: HOT DEALS -->
 
 <!-- START: FOOTER -->
@@ -1382,27 +1502,40 @@
 		</div>
 		<div class="main-footer row">
 			<div class="container clear-padding">
-				<div class="col-md-4 col-sm-6 about-box">
-					<h3>DMPHUB</h3>
+				<div class="col-md-3 col-sm-6 about-box">
+					<h3>CRUISE</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 					<a href="#">READ MORE</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
-				<div class="col-md-4 col-sm-6 links">
-					<h4>Our Services</h4>
+				<div class="col-md-3 col-sm-6 links">
+					<h4>Popular Tours</h4>
 					<ul>
-						<li><a href="#">Email Verification & Hygiene</a></li>
-						<li><a href="#">Postal Address Verification & Hygiene</a></li>
-						<li><a href="#">Phone Verification</a></li>
-						<li><a href="#">List Quality Analysis</a></li>
-						<li><a href="#">Data De-Duplication</a></li>
-						<li><a href="#">Data Enhancement</a></li>
+						<li><a href="#">Romantic France</a></li>
+						<li><a href="#">Wonderful Lodnon</a></li>
+						<li><a href="#">Awesome Amsterdam</a></li>
+						<li><a href="#">Wild Africa</a></li>
+						<li><a href="#">Beach Goa</a></li>
+						<li><a href="#">Casino Los Vages</a></li>
+						<li><a href="#">Romantic France</a></li>
 					</ul>
 				</div>
-				<div class="col-md-4 col-sm-6 contact-box">
+				<div class="clearfix visible-sm-block"></div>
+				<div class="col-md-3 col-sm-6 links">
+					<h4>Our Services</h4>
+					<ul>
+						<li><a href="#">Domestic Flights</a></li>
+						<li><a href="#">International Flights</a></li>
+						<li><a href="#">Tours & Holidays</a></li>
+						<li><a href="#">Domestic Hotels</a></li>
+						<li><a href="#">International Hotels</a></li>
+						<li><a href="#">Cruise Holidays</a></li>
+						<li><a href="#">Car Rental</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 contact-box">
 					<h4>Contact Us</h4>
-					<p><i class="fa fa-home"></i>DMPHUB</p>
-					<p><i class="fa fa-phone"></i>1234567890</p>
+					<p><i class="fa fa-home"></i> Street #156 Burbank, Studio City Hollywood, California USA</p>
+					<p><i class="fa fa-phone"></i> +91 1234567890</p>
 					<p><i class="fa fa-envelope-o"></i> support@domain.com</p>
 				</div>
 				<div class="clearfix"></div>
@@ -1420,74 +1553,25 @@
 		<div class="main-footer-nav row">
 			<div class="container clear-padding">
 				<div class="col-md-6 col-sm-6">
-					<p>Copyright &copy; 2016 DMPHUB. All Rights Reserved.</p>
+					<p>Copyright &copy; 2015 LimpidThemes. All Rights Reserved.</p>
 				</div>
-				<div class="go-up scrollup">
-					<a href="#" class="scrollup"><i class="fa fa-arrow-up"></i></a>
+				<div class="col-md-6 col-sm-6">
+					<ul>
+						<li><a href="#">FLIGHTS</a></li>
+						<li><a href="#">TOURS</a></li>
+						<li><a href="#">CARS</a></li>
+						<li><a href="#">HOTELS</a></li>
+						<li><a href="#">BLOG</a></li>
+					</ul>
+				</div>
+				<div class="go-up">
+					<a href="#"><i class="fa fa-arrow-up"></i></a>
 				</div>
 			</div>
 		</div>
 	</footer>
 </section>
 <!-- END: FOOTER -->
-
-
-<!-- START: FLIGHT MODAL -->
-<!--div class="modal fade flight-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3 class="modal-title">Log in to your App</h3>
-				</div>
-                <div class="modal-body">
-					<form class="form-horizontal" id="form1">
-						<fieldset>
-							<!-- Text input-->
-							<!--div class="form-group">
-							  <label class="col-md-4 control-label" for="Email">Email</label>
-							  <div class="col-md-6">
-								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-								  <input id="Email" name="Email" type="text" placeholder="Enter Your Email" class="form-control input-md">
-								</div>
-							  </div>
-							</div>
-							
-							<!-- Password input-->
-							<!--div class="form-group">
-							  <label class="col-md-4 control-label" for="Password">Password</label>
-							  <div class="col-md-6">
-								<div class="input-group"> <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-								  <input id="password" name="password" type="password" placeholder="Enter Your Password" class="form-control input-md">
-								</div>
-							  </div>
-							</div>
-							<div class="form-group" style="margin-left:220px;">
-								  <input type="checkbox"><span style="margin-left:5px;">Remember Me</span>
-		
-							  </div>
-							</div>
-								
-							<!-- Button -->
-							<!--div class="form-group" style="overflow:hidden;">
-							  <div class="col-md-6">
-								<button id="Submit" class="btn btn-primary center-block" type="Submit">SIGN ME IN</button>
-							  </div>
-							  <div class="col-md-6">
-								<button type="button" class="transition-effect register" data-toggle="modal" data-target=".flight-details2"data-dismiss="modal">
-							REGISTER NEW ACCOUNT
-						</button>
-							  </div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-</div-->
-<!-- END: FLIGHT MODAL -->
-
-	
-</div>
 </div>
 <!-- END: SITE-WRAPPER -->
 <!-- Load Scripts -->
@@ -1500,102 +1584,8 @@
 <script src="assets/plugins/wow.min.js"></script>
 <script type="text/javascript" src="assets/plugins/supersized.3.1.3.min.js"></script>
 <script src="assets/js/js.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-<script src="js/ValidationFormScript.js"></script>
-<script src="assets/js/index.js"></script>
-<!--script>
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script-->
-
-<script>
-jQuery(document).scroll(function() {
-var y = jQuery(this).scrollTop();
-    if (y > 20) {
-        jQuery('#transparent-menu-toggle').addClass('scrollActive');
-    } else {
-        jQuery('#transparent-menu-toggle').removeClass('scrollActive');
-    }
-});
-</script>
-
-<script>
-   $(document).ready(function () {
-       $(window).scroll(function () {
-           if ($(this).scrollTop() > 100) {
-               $('.scrollup').fadeIn();
-           } else {
-               $('.scrollup').fadeOut();
-           }
-       });
-       $('.scrollup').click(function () {
-           $("html, body").animate({
-               scrollTop: 0
-           }, 600);
-           return false;
-       });
-   });
- </script>
- 
- <script>
- $(document).ready(function(){
-	$('#transparent-menu-toggle a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-});
- </script>
- 
- 
- 
-<!--script src="//code.jquery.com/jquery-2.0.3.min.js"></script-->
-	
-<script src="//code.angularjs.org/1.2.20/angular.js"></script>
-<!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script-->
-    <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
-    <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
-
-    <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app.js"></script>
-    <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-services/authentication.service.js"></script>
-    <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-services/flash.service.js"></script>
-
-    <!-- Real user service that uses an api -->
-    <!-- <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-services/user.service.js"></script> -->
-
-    <!-- Fake user service for demo that uses local storage -->
-    <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-services/user.service.local-storage.js"></script>
-
-    <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/home/home.controller.js"></script>
-<!--script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/login/login.controller.js"></script-->
-	<script src="ngscript/login.Controller.js"></script>
-	
-    <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/register/register.controller.js"></script>
-<!--script src="ngscript/single.Email.js"></script-->
- 
- 
- 
- <script type="text/javascript">  
-	 /* SLIDER SETTINGS */
+<script type="text/javascript">  
+			
 			jQuery(function($){
 				"use strict";
 				$.supersized({
@@ -1605,7 +1595,7 @@ var y = jQuery(this).scrollTop();
 					autoplay				:	1,		//Slideshow starts playing automatically
 					start_slide             :   1,		//Start slide (0 is random)
 					random					: 	0,		//Randomize slide order (Ignores start slide)
-					slide_interval          :   5000,	//Length between transitions
+					slide_interval          :   10000,	//Length between transitions
 					transition              :   1, 		//0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 					transition_speed		:	500,	//Speed of transition
 					new_window				:	1,		//Image links open in new window/tab
@@ -1628,46 +1618,14 @@ var y = jQuery(this).scrollTop();
 					slide_counter           :   1,		//Display slide numbers
 					slide_captions          :   1,		//Slide caption (Pull from "title" in slides array)
 					slides 					:  	[		//Slideshow Images
-														{image : 'assets/images/slide-1.jpg', title : 'Slide 1'},  
-														{image : 'assets/images/banner.jpg', title : 'Slide 2'},  
-														{image : 'assets/images/slide-3.jpg', title : 'Slide 3'}  
+														{image : 'assets/images/hotel-slide.jpg', title : 'Slide 1'},  
+														{image : 'assets/images/slide16.jpg', title : 'Slide 2'},  
+														{image : 'assets/images/holiday-slide3.jpg', title : 'Slide 3'}  
 												]
 												
 				}); 
 		    });
 		    
 </script>
-
-
-
-<script>
-	
-	var app =angular.module('app', []);
-app.controller('emailController', function($scope, $http) {
-	//$scope.email="suriiii"
-	//alert($scope.email);
-$scope.names='';
-$scope.call=function(email){
-
-$http({
-    method: 'POST',
-    url: 'https://app.emaillistverify.com/api/verifEmail?secret=rEGTkYBCV9ca5LsoqO82l&email='+email,
-}).then(function(response) {
-console.log(response)
-     //alert(response);
-	 $scope.names = response.data;
-});
-
-}
- 
-$http.get('https://app.emaillistverify.com/api/verifEmail?secret=rEGTkYBCV9ca5LsoqO82l&email='+email).success( function(response) {
-                $scope.names = response;
-            });
-			
-			});
-</script>
-
- 
- 
 </body>
 </html>
